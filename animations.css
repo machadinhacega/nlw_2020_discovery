@@ -1,0 +1,43 @@
+/* animações */
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(16px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+.animate-up {
+    animation-name: up;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
+}
+
+#logo {
+    animation-delay: 50ms ;
+}
+
+.location{
+    animation-delay: 100ms ;
+}
+
+#logo {
+    animation-delay: 150ms ;
+}
+
+main h1 {
+    animation-delay: 200ms ;
+}
+
+.visit p {
+    animation-delay: 250ms ;
+}
+
+.visit a {
+    animation-delay: 300ms ; 
+}
