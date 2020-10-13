@@ -6,6 +6,10 @@
 body {
     height: 100vh;
     color: #ffffff;
+
+    font-size: 1em;
+    /* "em" busca do elemento pai dele
+       "rem" busca do elemento raiz "root" */
 }
 
 
@@ -22,11 +26,4 @@ body, input, button, textarea {
     line-height: 1;
     font: 400 18px/1 'Nunito', sans-serif; */
     font: 400 1.8rem/1 'Nunito', sans-serif;
-}
-
-
-body{
-    font-size: 1em;
-    /* "em" busca do elemento pai dele
-       "rem" busca do elemento raiz "root" */
 }

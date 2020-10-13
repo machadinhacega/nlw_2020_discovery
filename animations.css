@@ -26,18 +26,14 @@
     animation-delay: 100ms ;
 }
 
-#logo {
+main h1 {
     animation-delay: 150ms ;
 }
 
-main h1 {
+.visit p {
     animation-delay: 200ms ;
 }
 
-.visit p {
-    animation-delay: 250ms ;
-}
-
 .visit a {
-    animation-delay: 300ms ; 
+    animation-delay: 250ms ; 
 }
