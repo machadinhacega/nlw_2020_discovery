@@ -35,3 +35,42 @@ map.on('click', function(event){
     marker = L.marker([lat, lng], {icon})
     .addTo(map)
 })
+
+
+// adicionar o campo de fotos
+function addPhotoField() {
+    // pegar o container de fotos #images
+    const container = document.querySelector('#images')
+    // pegar o container para duplicar .new-upload (com o All ele pega tudo)
+    const fieldsContainer = document.querySelectorAll('.new-upload')
+    // clone da ultima imagem adicionada.
+    const newFieldContainer = fieldsContainer[fieldsContainer.length - 1].cloneNode(true)
+    // Verificar se o campo esta vazio. Se estiver não adiciona
+    const input = newFieldContainer.children[0]
+    if (input.value == "") {
+        return
+    }
+    // limpa para trazer limpo antes de adicionar ao campo de imagens
+    newFieldContainer.children[0].value=""
+    // adicionar o clone ao container de imagens
+    container.appendChild(newFieldContainer)
+
+}
+
+// OBS:
+// querySelect sempre pega o primeiro e ignora os outros, para pegar tudo precisa colocar o All
+// clone Node recebe um booliano. Se for True ele copia tudo q tem dentro do campo. Se for False ele copia so a tag por fora
+
+function deleteField(event) {
+    const span = event.currentTarget
+
+    const fieldsContainer = document.querySelectorAll('.new-upload') 
+
+    if(fieldsContainer.length <= 1) {
+        span.parentNode.children[0].value=""
+        return
+    }
+
+    // deletar o campo
+    span.parentNode.remove();
+}
