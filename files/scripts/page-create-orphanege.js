@@ -24,6 +24,9 @@ map.on('click', function(event){
     const lat = event.latlng.lat;
     const lng = event.latlng.lng
 
+    // colocando lat e lng no input do html
+    document.querySelector('[name=lat]') .value = lat;
+    document.querySelector('[name=lng]') .value = lng;
     // remove icon
     // se o marker existir ele vai para o map.remove
     marker && map.removeLayer(marker)
