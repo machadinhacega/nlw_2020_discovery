@@ -18,7 +18,7 @@ L
 
 // create icon
 const icon = L.icon({
-    iconUrl: "./files/assets/images/map-marker.svg",
+    iconUrl: "/assets/images/map-marker.svg",
     iconSize: [58,68],
     iconAnchor: [29, 68],
     popupAnchor: [170,2]
