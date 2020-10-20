@@ -94,3 +94,17 @@ function toggleSelect(event) {
     input.value = button.dataset.value // data-value verificando sim e nao (add no html 1 para sim e 0 para não)
 
 }
+
+
+
+
+
+function validate(event){
+//     // validar se lat e lng estao preenchidos
+//     // 16 minutos do ultimo video
+const needsLatAndLng = false;
+    if(needsLatAndLng){
+        event.preventDefaut()
+        alert('Selecione um ponto no mapa')    
+    }
+}
